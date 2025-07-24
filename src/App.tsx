@@ -10,6 +10,7 @@ import Dashboard from "./pages/Dashboard";
 import Exercises from "./pages/Exercises";
 import Workouts from "./pages/Workouts";
 import Analytics from "./pages/Analytics";
+import AIAnalytics from "./pages/AIAnalytics";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +47,11 @@ const App = () => (
             <Route path="/analytics" element={
               <ProtectedRoute>
                 <Analytics />
+              </ProtectedRoute>
+            } />
+            <Route path="/ai-analytics" element={
+              <ProtectedRoute>
+                <AIAnalytics />
               </ProtectedRoute>
             } />
             <Route path="*" element={<NotFound />} />

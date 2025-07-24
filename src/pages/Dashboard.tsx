@@ -14,7 +14,8 @@ import {
   User,
   LogOut,
   Plus,
-  Award
+  Award,
+  Brain
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -83,7 +84,7 @@ const Dashboard = () => {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
         {/* Welcome Section */}
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-foreground mb-2">
@@ -193,12 +194,18 @@ const Dashboard = () => {
                   Add Exercise
                 </Button>
               </Link>
-              <Link to="/analytics">
-                <Button variant="secondary" className="w-full justify-start" size="lg">
-                  <Activity className="mr-2 h-4 w-4" />
-                  View Analytics
-                </Button>
-              </Link>
+                <Link to="/analytics">
+                  <Button variant="secondary" className="w-full justify-start" size="lg">
+                    <Activity className="mr-2 h-4 w-4" />
+                    View Analytics
+                  </Button>
+                </Link>
+                <Link to="/ai-analytics">
+                  <Button variant="outline" className="w-full justify-start" size="lg">
+                    <Brain className="mr-2 h-4 w-4" />
+                    AI Coach
+                  </Button>
+                </Link>
             </CardContent>
           </Card>
         </div>
