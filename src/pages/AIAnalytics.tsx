@@ -24,6 +24,7 @@ import {
   CheckCircle
 } from 'lucide-react';
 import Layout from '@/components/Layout';
+import MuscleMap from '@/components/MuscleMap';
 
 interface ChatMessage {
   id: string;
@@ -177,6 +178,9 @@ const AIAnalytics = () => {
             </Button>
           </div>
         </div>
+
+        {/* Muscle Map */}
+        <MuscleMap />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* AI Insights */}
